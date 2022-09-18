@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "e1iO9juR79Dol0RTTWdd+FS9fLI+Dou4LSHHsgs0gnY=",
+  "Source": "stress-testing-app",
+  "BasePath": "_content/stress-testing-app",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
