@@ -7,3 +7,11 @@ RavenDB: http://localhost:8080/
 WebUI: http://localhost:6309/api
 
 GET request to add data: http://localhost:6309/api/add-weather
+
+## Start the stack with docker compose
+
+```bash
+cd stress-testing-test-app
+
+$ docker-compose up
+```
