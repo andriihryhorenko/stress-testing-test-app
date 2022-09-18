@@ -1,0 +1,33 @@
+services:
+  stress-testing-app:
+    build:
+      context: /Users/olhalahutina/Documents/GitHub/stress-testing-test-aa/stress-testing-app
+      dockerfile: stress-testing-app/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: stress-testing-app
+      target: base
+    container_name: stress-testing-app
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: stresstestingapp:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net6.0/stress-testing-app.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 6309
+      target: 80
+    tty: true
+    volumes:
+    - /Users/olhalahutina/Documents/GitHub/stress-testing-test-aa/stress-testing-app/stress-testing-app:/app:rw
+    - /Users/olhalahutina/vsdbg/vs2017u5:/remote_debugger:rw
+    - /Users/olhalahutina/.nuget/packages:/root/.nuget/packages:ro
+    - /Users/olhalahutina/Documents/GitHub/stress-testing-test-aa/stress-testing-app:/src:rw
+version: '3.4'

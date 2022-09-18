@@ -217,3 +217,21 @@ librvnpal Expected Version: 42013, librvnpal Current Version: 42013
    at System.IO.File.InternalReadAllText(String path, Encoding encoding)
    at System.IO.File.ReadAllText(String path)
    at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54006\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-09-18T16:40:52.5863688Z, 1, Operations, Server, Raven.Server.Program,  Build 54006, Version 5.4, SemVer 5.4.2, Commit 22eb486
+ PID 51, 64 bits, 4 Cores, Arch: Arm64
+ 7.667 GBytes Physical Memory, 5.984 GBytes Available Memory, 6.32 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-09-18T16:40:54.7248942Z, 8, Operations, A, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.1671250) to change the state to LeaderElect in term 9. (Election timeout:00:00:00.3000000)
+2022-09-18T16:41:05.5868413Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+2022-09-18T16:41:05.6074910Z, 28, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54006\src\Raven.Server\RavenServer.cs:line 2176
+2022-09-18T16:41:05.6074978Z, 8, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54006\src\Raven.Server\RavenServer.cs:line 2176
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-09-18T16:41:27.9298495Z, 1, Operations, Server, Raven.Server.Program,  Build 54006, Version 5.4, SemVer 5.4.2, Commit 22eb486
+ PID 51, 64 bits, 4 Cores, Arch: Arm64
+ 7.667 GBytes Physical Memory, 5.98 GBytes Available Memory, 6.319 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013

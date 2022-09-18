@@ -1,1 +1,1 @@
-{"Topology":{"TopologyId":"e09e57e6-195d-4d57-9ca3-b2264cc74efc","Members":{"A":"http://127.0.0.1:8080"},"Promotables":{},"Watchers":{},"LastNodeId":"A","Etag":7},"Leader":"A","NodeTag":"A","Etag":7,"PersistedAt":"2022-09-17T15:02:49.6987250+00:00"}
+{"Topology":{"TopologyId":"e09e57e6-195d-4d57-9ca3-b2264cc74efc","Members":{"A":"http://127.0.0.1:8080"},"Promotables":{},"Watchers":{},"LastNodeId":"A","Etag":27},"Leader":"A","NodeTag":"A","Etag":27,"PersistedAt":"2022-09-18T16:41:33.7267763+00:00"}

@@ -1,0 +1,12 @@
+services:
+  stress-testing-app:
+    build:
+      context: /Users/olhalahutina/Documents/GitHub/stress-testing-test-aa/stress-testing-app
+      dockerfile: stress-testing-app/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: stresstestingapp
+    ports:
+    - published: 5002
+      target: 80
+version: '3.4'

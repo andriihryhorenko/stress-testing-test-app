@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1703.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stress-testing-app", "stress-testing-app\stress-testing-app.csproj", "{F803B993-873B-43F8-8E82-80AD3FE10AA8}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{8D73D3F7-85E4-4C3C-A29B-948542F41FBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F803B993-873B-43F8-8E82-80AD3FE10AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F803B993-873B-43F8-8E82-80AD3FE10AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F803B993-873B-43F8-8E82-80AD3FE10AA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D73D3F7-85E4-4C3C-A29B-948542F41FBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D73D3F7-85E4-4C3C-A29B-948542F41FBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D73D3F7-85E4-4C3C-A29B-948542F41FBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D73D3F7-85E4-4C3C-A29B-948542F41FBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
