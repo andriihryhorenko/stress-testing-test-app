@@ -4,7 +4,7 @@ Asp.Net Core + Embedded RavenDB
 
 RavenDB: http://localhost:8080/
 
-WebUI: http://localhost:6309/api
+WebUI: http://localhost:6309
 
 GET request to add data: http://localhost:6309/api/add-weather
 
